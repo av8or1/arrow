@@ -2608,4 +2608,8 @@ Result<std::shared_ptr<io::OutputStream>> AzureFileSystem::OpenAppendStream(
   return impl_->OpenAppendStream(location, metadata, false, this);
 }
 
+void MyMethod(const std::string &whatever) {
+  ARROW_LOG(DEBUG) << "some text";
+}
+
 }  // namespace arrow::fs
